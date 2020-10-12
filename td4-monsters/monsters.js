@@ -84,7 +84,7 @@ monster.modules.app = (function() {
 			}
 			window.si = setInterval(function() {
 				monster.modules.actions.activiteAuHasard(activites)
-			},12000);
+			},100);
 
 		}
 
