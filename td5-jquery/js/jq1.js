@@ -129,11 +129,13 @@ $(document).ready(() => {
 			},
 			init() {
 				console.log('Exercice 5 : fenêtre modale');
-				$('.modal button').on('click', this.masquerModale());
-				$('#btnModal').on('click', () => {
+				$('.modal button').on('click', this.masquerModale);
+/*				$('#btnModal').on('click', () => {
 					this.afficherModale($('#choixModal').val()); 
+				});*/
+				$('#btnModal').on('click', () => {
+					this.afficherModale('#modal1'); 
 				});
-				$('.modal').on('click',this.masquerModale)
 
 			}
 		}
